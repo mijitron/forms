@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MijiTron</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/9578c16965.js"></script>
+
+<style>
+body {
+  background-color: rgba(0,0,0,.15);
+}
+/* Add padding between rows */
+.row-padding {
+padding: 1em 0;  
+}
+/* Remove the navbar's primary margin-bottom and rounded borders */ 
+.navbar {
+margin-bottom: 0;
+border-radius: 0;
+}
+/*Image sizing */
+img {
+width: 100%;
+object-fit: cover;
+}
+p {
+font-size: 1.25em;
+}
+date {
+font-size: 1.25em;
+font-style: italic;
+}
+/* Add a gray background color and some padding to the footer */
+footer {
+background-color: rgba(0,0,0,.85);
+color: rgba(255,255,255,.75);
+padding: 25px;
+}
+footer a {
+color: rgba(255,255,255,.75);
+}
+.h-divider{
+margin-top:5px;
+margin-bottom:5px;
+height:1px;
+width:100%;
+border-top:1px solid lightgray;
+}
+</style>
+</head>
+  
+<body>
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>        
+      </button>
+      <a class="navbar-brand" href="index.html">mijitron</a>
+    </div>
+    <div class="navbar" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Forms</a></li>
+      </ul>
+    </div>
+  </div>
+  </nav> 
+  <div class="row-padding"></div>
+
+  <div class="well container">
+    <h1>RWD</h1>
+    <p class="lead">Why Responsive Web Design Matters</p>
+    <p>
+        Responsive Web Design or RWD matters today because the way consumers retrieve and interpret content has immensely changed from the last decade. People of all ages, diversities and generations can now access the web directly through smartphones, tablets, desktop computers, smart tvs, video game consoles and trust me there is much more to come before the end of the century.
+    </p>
+    <p>
+        With the number of internet-capable devices increasing, the need for RWD has become an industry standard for all e-commerce sites. According to an article posted by the Interactive Media in Retail Group (IMRG), “…online retail sales made through mobile devices (smartphones and tablets) exceed[ed] 50% for the first time in Q4 2015/2106.”
+    </p>
+    <p>
+        As consumers become accustomed to accessing information a certain way, it has become the UX/UI designer’s job to ensure that these consumers are getting the best user experience. This experience should be the same regardless of the device screen’s size which is why RWD is a fundamental concept for any aspiring web designer.
+    </p>
+  </div>
+
+  <form class="well form-horizontal container">
+  <fieldset>
+
+  <!-- Form Name -->
+  <legend>Contact Us Today!</legend>
+
+  <!-- Text input-->
+
+  <div class="form-group">
+    <label class="col-md-5 control-label">First Name</label>  
+    <div class="col-md-5 inputGroupContainer">
+    <div class="input-group">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+    <input  name="first_name" placeholder="First Name" class="form-control"  type="text" required>
+      </div>
+    </div>
+  </div>
+
+  <!-- Text input-->
+
+  <div class="form-group">
+    <label class="col-md-5 control-label" >Last Name</label> 
+      <div class="col-md-5 inputGroupContainer">
+      <div class="input-group">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+    <input name="last_name" placeholder="Last Name" class="form-control"  type="text" required>
+      </div>
+    </div>
+  </div>
+
+  <!-- Text input-->
+         <div class="form-group">
+    <label class="col-md-5 control-label">E-Mail</label>  
+      <div class="col-md-5 inputGroupContainer">
+      <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+    <input name="email" placeholder="E-Mail Address" class="form-control"  type="text" required>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Text input-->
+
+  <div class="form-group">
+    <label class="col-md-5 control-label">Phone #</label>  
+      <div class="col-md-5 inputGroupContainer">
+      <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+    <input name="phone" placeholder="(845)555-1212" class="form-control" type="text" required>
+      </div>
+    </div>
+  </div>
+
+  <!-- Text input-->
+
+  <div class="form-group">
+    <label class="col-md-5 control-label">Address</label>  
+      <div class="col-md-5 inputGroupContainer">
+      <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+    <input name="address" placeholder="Address" class="form-control" type="text" required>
+      </div>
+    </div>
+  </div>
+
+  <!-- Text input-->
+
+  <div class="form-group">
+    <label class="col-md-5 control-label">City</label>  
+      <div class="col-md-5 inputGroupContainer">
+      <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+    <input name="city" placeholder="city" class="form-control"  type="text" required>
+      </div>
+    </div>
+  </div>
+
+  <!-- Select Basic -->
+
+  <div class="form-group"> 
+    <label class="col-md-5 control-label">State</label>
+      <div class="col-md-5 selectContainer">
+      <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+      <select name="state" class="form-control selectpicker" required>
+        <option value=" " >Please select your state</option>
+        <option>Alabama</option>
+        <option>Alaska</option>
+        <option >Arizona</option>
+        <option >Arkansas</option>
+        <option >California</option>
+        <option >Colorado</option>
+        <option >Connecticut</option>
+        <option >Delaware</option>
+        <option >District of Columbia</option>
+        <option> Florida</option>
+        <option >Georgia</option>
+        <option >Hawaii</option>
+        <option >daho</option>
+        <option >Illinois</option>
+        <option >Indiana</option>
+        <option >Iowa</option>
+        <option> Kansas</option>
+        <option >Kentucky</option>
+        <option >Louisiana</option>
+        <option>Maine</option>
+        <option >Maryland</option>
+        <option> Mass</option>
+        <option >Michigan</option>
+        <option >Minnesota</option>
+        <option>Mississippi</option>
+        <option>Missouri</option>
+        <option>Montana</option>
+        <option>Nebraska</option>
+        <option>Nevada</option>
+        <option>New Hampshire</option>
+        <option>New Jersey</option>
+        <option>New Mexico</option>
+        <option>New York</option>
+        <option>North Carolina</option>
+        <option>North Dakota</option>
+        <option>Ohio</option>
+        <option>Oklahoma</option>
+        <option>Oregon</option>
+        <option>Pennsylvania</option>
+        <option>Rhode Island</option>
+        <option>South Carolina</option>
+        <option>South Dakota</option>
+        <option>Tennessee</option>
+        <option>Texas</option>
+        <option> Uttah</option>
+        <option>Vermont</option>
+        <option>Virginia</option>
+        <option >Washington</option>
+        <option >West Virginia</option>
+        <option>Wisconsin</option>
+        <option >Wyoming</option>
+      </select>
+    </div>
+  </div>
+  </div>
+
+  <!-- Text input-->
+
+  <div class="form-group">
+    <label class="col-md-5 control-label">Zip Code</label>  
+      <div class="col-md-5 inputGroupContainer">
+      <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+    <input name="zip" placeholder="Zip Code" class="form-control"  type="text" required>
+      </div>
+  </div>
+  </div>
+
+  <!-- radio checks -->
+   <div class="form-group">
+                          <label class="col-md-5 control-label">Do you currently have a website?</label>
+                          <div class="col-md-5">
+                              <div class="radio">
+                                  <label>
+                                      <input type="radio" name="hosting" value="yes" /> Yes
+                                  </label>
+                              </div>
+                              <div class="radio">
+                                  <label>
+                                      <input type="radio" name="hosting" value="no" /> No
+                                  </label>
+                              </div>
+                          </div>
+                      </div>
+  
+  <!-- Text input-->
+  <div class="form-group">
+    <label class="col-md-5 control-label">If yes, please enter our websites url address</label>  
+     <div class="col-md-5 inputGroupContainer">
+      <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+    <input name="website" placeholder="Website or domain name" class="form-control" type="text" >
+      </div>
+    </div>
+  </div>
+
+  <!-- Text area -->
+
+  <div class="form-group">
+    <label class="col-md-5 control-label">Project Description</label>
+      <div class="col-md-5 inputGroupContainer">
+      <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+            <textarea class="form-control" name="comment" placeholder="Please describe your project details"></textarea>
+    </div>
+    </div>
+  </div>
+
+  <!-- Success message -->
+  <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
+
+  <!-- Button -->
+  <div class="form-group">
+    <label class="col-md-5 control-label"></label>
+    <div class="col-md-5">
+      <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
+    </div>
+  </div>
+
+  </fieldset>
+  </form>
+  </div>
+
+  <div class="row-padding"></div>
+
+  <footer class="text-center">
+    <p>&copy; 2017 mijitron</p>
+    <ul class="list-unstyled list-inline ">
+      <li><a href="https://www.linkedin.com/in/michellehwang"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
+      <li><a href="https://www.instagram.com/miji_tron"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+      <li><a href="snapchatadd.html"><i class="fa fa-snapchat-square fa-2x" aria-hidden="true"></i></a></li>
+    </ul>
+  </footer>
+  </body>
+</html>
